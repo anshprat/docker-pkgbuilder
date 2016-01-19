@@ -20,4 +20,4 @@ RUN cd /home/python-overcast.django && grep drf-tracking requirements.txt|xargs 
 RUN apt-get remove -y python-six
 
 RUN cd /home/python-overcast.django && git checkout setup_patch && python setup.py install
-
+RUN cd /home/python-overcast.django && python manage.py migrate
