@@ -12,7 +12,7 @@ RUN apt-get -y update && apt-get install -y vim \
 					libssl-dev \
 					reprepro \
                                         nginx \
-					dpkg-dev \
+					dpkg-dev 
 
 
 # python-six version conflict happens, so removing it
